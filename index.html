@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单音乐网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player-container">
+        <h1>简单音乐播放器</h1>
+        <div class="player">
+            <audio id="audio" controls>
+                <source src="song1.mp3" type="audio/mpeg">
+                你的浏览器不支持音频播放。
+            </audio>
+        </div>
+        <div class="playlist">
+            <ul>
+                <li onclick="playSong('song1.mp3')">歌曲1</li>
+                <li onclick="playSong('song2.mp3')">歌曲2</li>
+                <li onclick="playSong('song3.mp3')">歌曲3</li>
+            </ul>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
